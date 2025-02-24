@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+requires-python = ">= 3.8"
+
+[project]
+name = "perturbqa"
+version = "0.1.0"
+description = "PerturbQA benchmark"
+authors = [
+    { name = "Menghua Wu", email = "rmwu@mit.edu" },
+    { name = "Jan-Christian Huetter", email = "huetter.janchristian-klaus@gene.com" }
+]
+dependencies = [
+    "scikit_learn",
+    "numpy",
+]
+
+[tool.setuptools]
+packages = ["perturbqa"]
+
+[tool.setuptools.package-data]
+"perturbqa.datasets" = ["*.csv", "*.json"]
+
+[project.optional-dependencies]
+dependencies = [
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "torchmetrics",
+    "transformers",
+]
+

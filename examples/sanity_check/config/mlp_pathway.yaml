@@ -1,0 +1,19 @@
+---
+ # file is parsed by inner-most keys only
+ data:
+     pathway_file: "data/k562_clusters.json"
+     debug: False
+     batch_size: 5000
+     num_workers: 8
+     accumulate_batches: 1
+     log_frequency: 10
+ model:
+     model: "mlp_pathway"
+ train:
+     patience: 10
+     epochs: 10000
+     min_epochs: 50
+     lr: 1.e-4
+     weight_decay: 1.e-6
+     metric: "Val/de_auprc"
+

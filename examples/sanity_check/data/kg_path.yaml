@@ -1,0 +1,9 @@
+---
+ pairwise:
+   - data/kg/bioplex.json
+   - data/kg/string.json
+ bipartite:
+   - data/kg/go.json
+   - data/kg/reactome.json
+   - data/kg/corum.json
+

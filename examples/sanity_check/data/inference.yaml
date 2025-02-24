@@ -1,0 +1,9 @@
+---
+ # this is a sample file for inference_batch.py
+- checkpoint_path: path/to/checkpoint.ckpt
+  config_file: config/mlp.yaml
+  data_file: data/20240712-replogle_k562_gw.csv
+  embed_dim: 1024
+  ffn_embed_dim: 2048
+  num_layers: 4
+  results_file: results/k562_gw-mlp.pkl
