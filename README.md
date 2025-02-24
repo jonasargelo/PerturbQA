@@ -36,7 +36,7 @@ Specifically, the following packages are required to run our evaluation.
 This code distribution contains the PerturbQA input and label pairs.
 For additional materials, including processed knowledge graphs and model
 predictions, please see the
-[data distribution](https://zenodo.org).
+[data distribution](https://doi.org/10.5281/zenodo.14915312).
 
 ## PerturbQA benchmark
 
@@ -104,7 +104,7 @@ scores = bert_score(pred, true)
 ### Knowledge graph to prompts
 
 Processed knowledge graphs are available in the [data
-distribution](https://zenodo.org)
+distribution](https://doi.org/10.5281/zenodo.14915312)
 under the archive `kg.zip`.
 
 See `examples/kg_to_prompt.ipynb` for details about how to load these files
@@ -119,7 +119,7 @@ Please see `examples/summer` for more details.
 
 - All prompt templates may be found at `examples/summer/prompts`.
 - Raw LLM outputs can be found in the [data
-  distribution](https://zenodo.org), in the archives named:
+  distribution](https://doi.org/10.5281/zenodo.14915312), in the archives named:
   - `summer_outputs.zip`
   - `llm-nocot.zip`
   - `llm-noretrieve.zip`
