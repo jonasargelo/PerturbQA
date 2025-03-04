@@ -2,7 +2,7 @@
 
 This is the official repository for PerturbQA.
 If you find our work interesting, please check out our
-[paper](https://openreview.net/forum?id=5WEpbilssv)
+[paper](https://arxiv.org/abs/2502.21290)
 to learn more!
 
 ```
@@ -12,7 +12,6 @@ to learn more!
     author={Menghua Wu and Russell Littman and Jacob Levine and Lin Qiu and Tommaso Biancalani and David Richmond and Jan-Christian Huetter},
     booktitle={The Thirteenth International Conference on Learning Representations},
     year={2025},
-    url={https://openreview.net/forum?id=5WEpbilssv}
 }
 ```
 
