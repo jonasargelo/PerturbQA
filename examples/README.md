@@ -6,7 +6,7 @@ This directory contains various examples, as well as the baselines for our vario
 
 `kg_to_prompt.ipynb` shows how to convert our processed knowledge
 graphs into text (e.g. for LLM summarization).
-Note that this requires the knowledge graphs `kg.zip`, from our [data distribution](https://zenodo.org/records/13760748?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImQ2NTU1MTZjLTQ1OTktNGFlZi1hNWE2LTk5ZDRhNzIwMGZjZSIsImRhdGEiOnt9LCJyYW5kb20iOiI4ZmQzNDZlNmZhZGQ1MTAzN2YyM2ZlYjU4ZWNjMGZmNCJ9.Ym9Ws841nq4_KDAFxXg4f7FC55jBCCedCEAyh5q44j3D5834pxUIU2mhZwYytQ2NJfb4kSe9re9gTqXJ68F_PA).
+Note that this requires the knowledge graphs `kg.zip`, from our [data distribution](https://doi.org/10.5281/zenodo.14915312).
 Place the unzipped folder at `perturbqa/datasets/kg`.
 
 Licenses of individual files are noted in the main `README`. Please note that CORUM is licensed under [CC BY NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.en).
