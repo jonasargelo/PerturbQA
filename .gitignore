@@ -1,0 +1,10 @@
+gene_summary
+llm-nocot_outputs
+llm-noretrieve_outputs
+summer_enrichment
+summer_outputs
+results
+perturbqa/datasets/kg
+
+**.zip
+**.egg-info
