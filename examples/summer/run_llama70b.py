@@ -29,10 +29,10 @@ pipe = pipeline(
 
 gen_config = GenerationConfig(top_p=0.9,
                               temperature=0.6,
-                              max_new_tokens=1024)
+                              max_new_tokens=2048)
 
 paths = [
-    "inputs/sample.json",
+    "inputs/diff_exp/AARS2_AAK1_example.json",
 ]
 
 for fp_prompts in paths:
@@ -69,7 +69,7 @@ for fp_prompts in paths:
         with open(fp_out) as f:
             all_outputs.extend(json.load(f))
 
-    fp_out = fp_prompts.replace("inputs/", "outputs/")
+    fp_out = os.path.join("outputs/diff_exp", "llama-3-70b.json")
     with open(fp_out, "w+") as f:
         json.dump(all_outputs, f)
 

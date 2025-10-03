@@ -4,7 +4,13 @@ llm-noretrieve_outputs
 summer_enrichment
 summer_outputs
 results
-perturbqa/datasets/kg
+perturbqa/datasets
+examples/summer/logs
+examples/gene_neighbors
+examples/gene_neighbors
 
 **.zip
 **.egg-info
+
+# Exploration notebooks
+**/explore.ipynb

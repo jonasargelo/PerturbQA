@@ -11,6 +11,8 @@ Order of priority
 7. random P', close G'
 """
 
+import numpy as np
+
 
 def get_pairs(*, pert, gene,
               close_perts, close_genes,

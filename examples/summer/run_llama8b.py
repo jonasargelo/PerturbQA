@@ -11,7 +11,6 @@ Sample input and output at inputs/sample.json, outputs/sample.json
 import os
 import json
 from datetime import datetime
-
 from lmdeploy import pipeline, GenerationConfig, TurbomindEngineConfig
 
 
@@ -22,15 +21,14 @@ engine_config = TurbomindEngineConfig(
 )
 gen_config = GenerationConfig(top_p=0.9,
                               temperature=0.6,
-                              max_new_tokens=1024)
+                              max_new_tokens=2048)
 pipe = pipeline(
     "meta-llama/Meta-Llama-3-8B",
     backend_config=engine_config
 )
 
-
 paths = [
-    "inputs/sample.json"
+    "inputs/diff_exp/AARS2_AAK1_example.json"
 ]
 
 for fp_prompts in paths:
@@ -67,7 +65,7 @@ for fp_prompts in paths:
         with open(fp_out) as f:
             all_outputs.extend(json.load(f))
 
-    fp_out = fp_prompts.replace("inputs/", "outputs/")
+    fp_out = os.path.join("outputs/diff_exp", "llama-3-8b.json")
     with open(fp_out, "w+") as f:
         json.dump(all_outputs, f)
 
